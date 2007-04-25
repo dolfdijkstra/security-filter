@@ -1,0 +1,24 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+    <filter>
+        <filter-name>SecurityFilter</filter-name>
+        <filter-class>com.fatwire.cs.filters.SecurityFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>SecurityFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <servlet>
+    <servlet-name>HelloWorld</servlet-name>
+    <servlet-class>com.fatwire.cs.servlets.HelloWorldServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>HelloWorld</servlet-name>
+    <url-pattern>/HelloWorld</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
